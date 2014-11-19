@@ -7,9 +7,29 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
+        // 界面主题配置
+        'view' => [
+            //'class' => 'yii\web\View',
+            //设置主题使用的view类
+            'class' => 'fis\view',
+            'theme' => [
+                // 设置替换映射关系
+                'pathMap' => [
+
+                    '@app/views' => [
+                        '@app/views/themes/basic',
+                        '@app/views/themes/default',
+                    ],
+
+                ],
+                // 设置要访问的资源的url（结尾不加“/”）
+                'baseUrl' => '@web/themes/basic',
+
+            ]
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => '',
+            'cookieValidationKey' => 'adasdfAWEAADERsaefsdFA#@#SDF#ffDafa##FA#fadf#',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
