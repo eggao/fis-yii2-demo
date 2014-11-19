@@ -1,3 +1,12 @@
++增加 `fis/view.php` 至 `vendor` 目录
+
++增加 `src` 目录至 `根目录`用以存放前端开发资源 （ `模板`、`静态资源` ）
+
+*修改 入口文件 `web/index.php` 在引入`yii.php` 之后将`fis\view`加入类map `Yii::$classMap['fis\view'] = '@app/vendor/fis/view.php';`
+
+*修改 配置文件 `config/web.php` 增加 `config.components.view` 相关配置
+
+--------------------------------------------------------------------------
 Yii 2 Basic Application Template
 ================================
 
