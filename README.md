@@ -8,6 +8,12 @@
 
 *修改 配置文件 `config/web.php` 增加 `config.components.view` 相关配置
 
+立即体验
+---
+1. 打开文件`wwwroot/src/basic/fis-conf.js`
+2. 修改 `fis.config.set('roadmap.domain','/fis-yii2-demo');`配置项
+3. cmd定位到`wwwroot/src/basic` 运行 `fis release -Dd ../../`
+4. 打开项目访问地址查看结果
 资源引入
 ---
 资源引入方式见 `src/basic/site/index.php`
